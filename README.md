@@ -1,3 +1,24 @@
+# Site d'entreprise québécoise
+
+Ce site web représente une entreprise fictive du Québec pour un projet scolaire. Il utilise React et Vite, avec un design moderne, des animations, et un thème orange/noir.
+
+## Fonctionnalités
+- Plusieurs onglets/pages : Accueil, Notre histoire, Services, etc.
+- Animations modernes.
+- Thème orange et noir.
+
+## Lancer le projet
+
+```bash
+npm run dev
+```
+
+Le site sera accessible sur http://localhost:5173
+
+---
+
+*Remplacez les textes et images par ceux de votre entreprise réelle si besoin.*
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

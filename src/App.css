@@ -1,3 +1,133 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #181818;
+  color: #fff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.site-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #ff9100 0%, #181818 100%);
+  animation: bgfade 2s;
+}
+
+@keyframes bgfade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.header {
+  background: #181818cc;
+  padding: 1.5rem 2rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 16px #ff910033;
+}
+
+.header h1 {
+  color: #ff9100;
+  margin: 0 0 0.5rem 0;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px #000a;
+  animation: fade-in 1s;
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, transform 0.2s;
+  font-weight: bold;
+}
+
+nav button.active,
+nav button:hover {
+  background: #ff9100;
+  color: #181818;
+  transform: scale(1.08);
+  box-shadow: 0 2px 8px #ff910055;
+}
+
+main {
+  flex: 1;
+  padding: 2rem 1rem 1rem 1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+section {
+  background: #181818cc;
+  border-radius: 18px;
+  padding: 2rem 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 16px #ff910033;
+}
+
+.fade-in {
+  animation: fade-in 1s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer {
+  background: #181818cc;
+  color: #ff9100;
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  box-shadow: 0 -2px 16px #ff910033;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  position: relative;
+  padding-left: 1.2em;
+}
+
+ul li:before {
+  content: '•';
+  color: #ff9100;
+  position: absolute;
+  left: 0;
+  font-size: 1.2em;
+  top: 0.1em;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -11,9 +141,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
